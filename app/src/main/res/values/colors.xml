@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+<!--    <color name="silver">C0C0C0</color>-->
+<!--    <color name="Gray">#808080</color>-->
+    <color name="white">#FFFFFFFF</color>
+<!--    <color name="Maroon">#800000</color>-->
+<!--    <color name="Red">#FF0000</color>-->
+<!--    <color name="Purple">#800080</color>-->
+<!--    <color name="fuchsia">#FF00FF</color>-->
+<!--    <color name="green">#008000</color>-->
+<!--    <color name="Lime">#00FF00</color>-->
+<!--    <color name="olive">#808000</color>-->
+<!--    <color name="Yellow">#FFFF00</color>-->
+<!--&lt;!&ndash;    <color name="navy">#000080</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="sky_blue">#87CEEB</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="light_sky_blue">#87CEFA</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="deep_sky_blue">#00BFFF</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="dodger_blue">#1E90FF</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="royal_blue">#4169E1</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="midnight_blue">#191970</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="steel_blue">#4682B4</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="powder_blue">#B0E0E6</color>&ndash;&gt;-->
+<!--    <color name="blue">#0000FF</color>-->
+<!--    <color name="teal">#008080</color>-->
+<!--    <color name="aqua">#00FFFF</color>-->
+<!--    <color name="cyan">#00FFFF</color>-->
+<!--    <color name="Cosmos">#FFCCCC</color>-->
+<!--    <color name="orange">#FFA500</color>-->
+<!--    <color name="dark_orange">#FF8C00</color>-->
+<!--    <color name="gold">#FFD700</color>-->
+<!--    <color name="amber">#FFBF00</color>-->
+<!--    <color name="peach">#FFDAB9</color>]-->
+<!--    <color name="brown">#A52A2A</color>-->
+<!--    <color name="saddle_brown">#8B4513</color>-->
+<!--    <color name="chocolate">#D2691E</color>-->
+<!--    <color name="sienna">#A0522D</color>-->
+<!--    <color name="tan">#D2B48C</color>-->
+<!--    <color name="khaki">#F0E68C</color>-->
+<!--    <color name="forest_green">#228B22</color>-->
+<!--    <color name="sea_green">#2E8B57</color>-->
+<!--    <color name="emerald">#50C878</color>-->
+<!--    <color name="mint">#F5FFFA</color>-->
+<!--    <color name="aquamarine">#7FFFD4</color>-->
+<!--    <color name="chartreuse">#7FFF00</color>-->
+<!--    <color name="jade">#00A86B</color>-->
+
+
+
+
+</resources>

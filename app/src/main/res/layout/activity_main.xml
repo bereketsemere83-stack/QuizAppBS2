@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/questionTV"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="8 * 6  =  46 "
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/trueBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRUE"
+        android:textSize="25dp"/>
+
+
+    <Button
+        android:id="@+id/falseBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FALSE"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/SubmitBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="25dp" />
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
