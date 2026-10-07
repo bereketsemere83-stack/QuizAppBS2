@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     Button trueBTN, falseBTN, submitBTN;
     TextView questionTV;
     int score;
+    Question q1, q2, q3, q4, q5, q6, q7,q8, q9, q10;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,20 @@ public class MainActivity extends AppCompatActivity {
         submitBTN = (Button) findViewById(R.id.SubmitBTN);
         questionTV =(TextView) findViewById(R.id.questionTV);
         score = 0;
+
+        q1 = new Question("8 * 6  =  48",  true );
+        q2 = new Question(" 7 * 5 = 30",  false );
+        q3 = new Question("9 * 4 = 36", true);
+        q4 = new Question(" 6 * 7 = 40", false);
+        q5 = new Question(" 72/8  = 9  ", true);
+        q6 = new Question(" 12/3  =  4", true);
+        q7 = new Question(" 56/8 = 7  ", true);
+        q8 = new Question(" 35/5  =  6 ", false);
+        q9 = new Question(" 42/7  =  8", false);
+        q10 = new Question("11 * 3 = 33", true);
+
+
+
 
         // 3. Do stuff
         // 3a. when the user clicks the True button,
