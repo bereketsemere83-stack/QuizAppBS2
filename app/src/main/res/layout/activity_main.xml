@@ -8,10 +8,9 @@
     <ImageView
         android:id="@+id/flagIV"
         android:layout_width="300dp"
-        android:layout_height="180dp"
-        android:src="@drawable/brazil"
-
-        android:contentDescription="Country flag" />
+        android:layout_height="168dp"
+        android:contentDescription="Country flag"
+        android:src="@drawable/brazil" />
 
 
     <TextView
@@ -19,7 +18,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="10dp"
+        android:padding="0dp"
+        android:background="#FFFFFFFF"
         android:text="@string/q1_prompt"
         android:textSize="50dp"
         android:textColor="@color/black"/>

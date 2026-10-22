@@ -30,7 +30,7 @@ public class ScoreActivity2 extends AppCompatActivity {
 
         incomingIntent = getIntent();
         score = incomingIntent.getIntExtra("score", 0);
-        scoreMessage = "SCORE: " + score;
+        scoreMessage = "SCORE: " + score + "/10";
 
         scoreTV.setText(scoreMessage);
 

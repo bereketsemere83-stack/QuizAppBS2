@@ -47,16 +47,21 @@ public class MainActivity extends AppCompatActivity {
         questionNumber = 0;
 
 
-        q1 = new Question("This is the flag of Brazil.", true,R.drawable.brazil);
-        q2 = new Question("This is the flag of Peru.", false, R.drawable.canada);
-        q3 = new Question("This is the flag of United States.", true,R.drawable.usa);
-        q4 = new Question("This is the flag of Argentina.", true, R.drawable.argentina);
-        q5 = new Question("This is the flag of France.", false,R.drawable.russia);
-        q6 = new Question("This is the flag of Norway.", false,R.drawable.swiss);
-        q7 = new Question("This is the flag of Eritrea.", true,R.drawable.eritrea);
-        q8 = new Question("This is the flag of Sudan.", false,R.drawable.southafrica);
-        q9 = new Question("This is the flag of Spain.", false,R.drawable.india);
-        q10 = new Question("This is the flag of Congo.", true,R.drawable.congo);
+        q1 = new Question(getString(R.string.q1_prompt), true, R.drawable.brazil);
+        q2 = new Question(getString(R.string.q2_prompt), false, R.drawable.canada);
+        q3 = new Question(getString(R.string.q3_prompt), true, R.drawable.usa);
+        q4 = new Question(getString(R.string.q4_prompt), true, R.drawable.argentina);
+        q5 = new Question(getString(R.string.q5_prompt), false, R.drawable.russia);
+        q6 = new Question(getString(R.string.q6_prompt), false, R.drawable.swiss);
+        q7 = new Question(getString(R.string.q7_prompt), true, R.drawable.eritrea);
+        q8 = new Question(getString(R.string.q8_prompt), false, R.drawable.southafrica);
+        q9 = new Question(getString(R.string.q9_prompt), false, R.drawable.india);
+        q10 = new Question(getString(R.string.q10_prompt), true, R.drawable.congo);
+
+
+
+
+
         questions = new Question[]{
                 q1, q2, q3, q4, q5, q6, q7, q8, q9, q10
 

@@ -1,18 +1,19 @@
 <resources>
 <string name="app_name">QuizAppBS2</string>
-<string name="q1_prompt">This is the flag of Brazil.</string>
+<string name="q1_prompt">እዚ ናይ ብራዚል ባንዴራ እዩ</string>
 <string name="true_btn">ሓቂ</string>
 <string name="false_btn">ሓሶት</string>
 <string name="next_btn">ቀጸል </string>
 <string name="right_msg">ቁኑዕ መልሲ </string>
 <string name="wrong_msg">ጌጋ መልሲ  </string>
-<string name="q2_prompt">This is the flag of Peru.</string>
-<string name="q3_prompt">This is the flag of United States.</string>
-<string name="q4_prompt">This is the flag of Argentina.</string>
-<string name="q5_prompt">This is the flag of France.</string>
-<string name="q6_prompt">This is the flag of Norway.</string>
-<string name="q7_prompt">This is the flag of Eritrea.</string>
-<string name="q8_prompt">This is the flag of Sudan.</string>
-<string name="q9_prompt">This is the flag of Spain.</string>
-<string name="q10_prompt">This is the flag of Congo.</string>
+<string name="q2_prompt">እዚ ናይ ፔሩ ባንዴራ እዩ።</string>
+<string name="q3_prompt">እዚ ናይ ሕቡራት መንግስታት ኣሜሪካ ባንዴራ እዩ።</string>
+<string name="q4_prompt">እዚ ናይ ኣርጀንቲና ባንዴራ እዩ።</string>
+<string name="q5_prompt">እዚ ናይ ፈረንሳ ባንዴራ እዩ።</string>
+<string name="q6_prompt">እዚ ናይ ኖርወይ ባንዴራ እዩ።</string>
+<string name="q7_prompt">እዚ ናይ ኤርትራ ባንዴራ እዩ።</string>
+<string name="q8_prompt">እዚ ናይ ሱዳን ባንዴራ እዩ።</string>
+<string name="q9_prompt">እዚ ናይ ስጳኛ ባንዴራ እዩ።</string>
+<string name="q10_prompt">እዚ ናይ ኮንጎ ባንዴራ እዩ።</string>
+
 </resources>
