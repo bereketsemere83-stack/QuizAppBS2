@@ -1,8 +1,11 @@
 package org.baltimorecityschools.quizappbs2;
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,11 +23,15 @@ public class MainActivity extends AppCompatActivity {
     Button trueBTN, falseBTN, submitBTN;
     TextView questionTV;
     int score;
-    Question q1, q2, q3, q4, q5, q6, q7,q8, q9, q10,currentq;
+    Question q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
+    Question currentq;
+    String message;
+    int questionNumber;
     Question[] questions;
+    ImageView flagIV;
 
 
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,42 +41,46 @@ public class MainActivity extends AppCompatActivity {
         trueBTN = (Button) findViewById(R.id.trueBTN);
         falseBTN = (Button) findViewById(R.id.falseBTN);
         submitBTN = (Button) findViewById(R.id.SubmitBTN);
-        questionTV =(TextView) findViewById(R.id.questionTV);
+        questionTV = (TextView) findViewById(R.id.questionTV);
+        flagIV = (ImageView) findViewById(R.id.flagIV);
         score = 0;
+        questionNumber = 0;
 
-        q1 = new Question("8 * 6  =  48",true );
-        q2 = new Question("7 * 5 = 30",false );
-        q3 = new Question("9 * 4 = 36 ",true);
-        q4 = new Question("6 * 7 = 40", false);
-        q5 = new Question("12/3  =  4  ", true);
-        q6 = new Question("72/8 = 9", true);
-        q7 = new Question("35/5 = 6  ", false);
-        q8 = new Question("42/7 = 8 ", false);
-        q9 = new Question("11 * 3 = 33", false);
-        q10 = new Question("56/8  = 7", true);
-        questions = new Question[] {
-                q1,q2,q3,q4,q5,q6,q7,q8,q9,q10
+
+        q1 = new Question("This is the flag of Brazil.", true,R.drawable.brazil);
+        q2 = new Question("This is the flag of Peru.", false, R.drawable.canada);
+        q3 = new Question("This is the flag of United States.", true,R.drawable.usa);
+        q4 = new Question("This is the flag of Argentina.", true, R.drawable.argentina);
+        q5 = new Question("This is the flag of France.", false,R.drawable.russia);
+        q6 = new Question("This is the flag of Norway.", false,R.drawable.swiss);
+        q7 = new Question("This is the flag of Eritrea.", true,R.drawable.eritrea);
+        q8 = new Question("This is the flag of Sudan.", false,R.drawable.southafrica);
+        q9 = new Question("This is the flag of Spain.", false,R.drawable.india);
+        q10 = new Question("This is the flag of Congo.", true,R.drawable.congo);
+        questions = new Question[]{
+                q1, q2, q3, q4, q5, q6, q7, q8, q9, q10
+
         };
-        currentq = questions[0,1,2,3,4,5,6,7,8,9,10]
+        currentq = questions[0];
+        questionTV.setText(currentq.getquestionprompt());
+        flagIV.setImageResource(currentq.getImage());
 
 
-
-
-
-        // 3. Do stuff
+                // 3. Do stuff
         // 3a. when the user clicks the True button,
         trueBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 3b. A popup should appear telling them they are wrong.
-                String message = "Your are Right!";
+                if (currentq.getcorrectAns() == true) {
+                    message = getString(R.string.right_msg);
+                    score = score + 1;
+                }
+                else {
+                    message = getString(R.string.wrong_msg);
+                }
                 int duration = Toast.LENGTH_SHORT;
-                Toast toastWrong = Toast.makeText(MainActivity.this, message, duration);
-                toastWrong.show();
-                score = score + 1;
-
-
-
+                Toast toast = Toast.makeText(MainActivity.this, message, duration);
+                toast.show();
 
             }
         });
@@ -78,27 +89,46 @@ public class MainActivity extends AppCompatActivity {
         falseBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 3b. A popup should appear telling them they are wrong.
-                String message = "Your are Wrong!";
+                if (currentq.getcorrectAns() == false) {
+                    message = getString(R.string.right_msg);
+                    score = score + 1;
+                }
+                else {
+                    message = getString(R.string.wrong_msg);
+                }
                 int duration = Toast.LENGTH_SHORT;
-                Toast toastWrong = Toast.makeText(MainActivity.this, message, duration);
-                toastWrong.show();
-
+                Toast toast = Toast.makeText(MainActivity.this, message, duration);
+                toast.show();
 
             }
         });
+
+
+        // NEXT BUTTON
         submitBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goTOScoreIntent = new Intent(MainActivity.this, ScoreActivity2.class);
-                goTOScoreIntent.putExtra("score", score);
-                startActivity(goTOScoreIntent);
+                if (questionNumber < questions.length - 1) {
+                    questionNumber = questionNumber + 1;
+                    currentq = questions[questionNumber];
+                    questionTV.setText(currentq.getquestionprompt());
+                    flagIV.setImageResource(currentq.getImage());
+
+                }
+                else {
+                    Intent goTOScoreIntent = new Intent(MainActivity.this, ScoreActivity2.class);
+                    goTOScoreIntent.putExtra("score", score);
+                    startActivity(goTOScoreIntent);
+
+                }
 
             }
         });
 
-
-
-
     }
+
 }
+
+
+
+

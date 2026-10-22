@@ -5,21 +5,30 @@
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ImageView
+        android:id="@+id/flagIV"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:src="@drawable/brazil"
+
+        android:contentDescription="Country flag" />
+
 
     <TextView
         android:id="@+id/questionTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="20dp"
-        android:text="8 * 6  =  48 "
-        android:textSize="50dp" />
+        android:padding="10dp"
+        android:text="@string/q1_prompt"
+        android:textSize="50dp"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/trueBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
+        android:text="@string/true_btn"
         android:textSize="25dp"/>
 
 
@@ -27,14 +36,14 @@
         android:id="@+id/falseBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FALSE"
+        android:text="@string/false_btn"
         android:textSize="25dp" />
 
     <Button
         android:id="@+id/SubmitBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/next_btn"
         android:textSize="25dp" />
 
 

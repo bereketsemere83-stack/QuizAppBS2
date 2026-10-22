@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:gravity="center"
-        android:text="Score:  "
+        android:text="Score:  +  10/"
         android:textSize="30dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
